@@ -24,8 +24,8 @@ The most essential thing that this accomplishes is lowering the total TPD/Power 
 2. To apply a preset, go into device settings --> "Odin settings" --> "Run script as Root" --> (Read and ignore their warning) --> "SELECT A SCRIPT"
 3. Select the preset file you wish to apply that was downloaded earlier. 
 4. Confirm file name selected looks correct, then click "RUN".
-- The script should execute VERY quickly. You may very briefly see a window pop up that shows it's executing the script the go away. 
-- The should be a confirmation bubble showing script was ran. 
+- The script should execute VERY quickly. You may very briefly see a window pop up that shows it's executing the script then go away. 
+- There should be a confirmation bubble showing script was completed. 
 5. That's it! The settings will have applied. 
 - Unless you have a 3rd party app you will not be able to directly see that anything has been changed.
 - Easiest way to tell if it's applying correctly is to swap back and forth between "aggressive" and "reset" while running something demanding on the device and notice a temperature or power consumption change. For example, while playing Rise of Tomb Raider on gamenative at 1080 max settings, I could see my consumption go from ~20W to ~14
