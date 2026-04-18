@@ -12,7 +12,7 @@ Using the methods below, the CPU of the Odin3 can be underclocked (not to be con
 
 The most essential thing that this accomplishes is lowering the total TPD/Power consumed by the CPU which then:
 - Lowers temps, which also means you can lower fan curve (my personal favorite benefit from this since my fan sounds like a garbage disposal).
-- Lenghthens battery life
+- Lengthens battery life
 - Allows for the GPU to "have a little more breathing room". I'm not 100% sure what exactly this does for the GPU but in some cases seen online people have stated better game performance in games that are GPU bottlenecked. It could be the GPU getting a larger share of the power and/or it could be the whole system being saved from thermal throttling, etc. 
 
 ##  Process/Explanation
@@ -49,4 +49,4 @@ If you wish to manually tweak the settings presets or make your own (which is va
 ## Notes/Observations
 - I tried making a script with macros to allow simpler way to make custom script settings, but for some reason I could not get any versions of the script I made to work. Hopefully the provided custom template is simple enough.
 - Based on some very brief testing I have done, it seems like the underclock values used for the Cluster 1 cores is where a large majority of the impact is seen, at least from a thermals stand point. Changing the clock speed of Cluster 1 alone made a pretty noticeable TDP difference, whereas changing only Cluster 0 cores clocks didn't seem to make much noticeable difference at all. 
-
+- I also couldn't find a way to allow scripts to run automatically on boot, which should probably be a given since this is a rootless solution. 
