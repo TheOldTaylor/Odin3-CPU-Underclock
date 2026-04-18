@@ -5,6 +5,7 @@ Instructions and other information on how to underclock AYN Odin 3 CPU WITHOUT f
 - I do not guarantee the safety of or functional benefit of using this on your device. Use at your own risk.
 - I am not an expert in this category.
 - This functionality was not originally discovered by me, but by "anonymous until they tell me I can put their name here" on AYN discord server. 
+- Only use this if you have an AYN ODIN 3. In theory this may work with any device with the same chipset but once again I do not guarantee that there won't be issues caused by this.
 
 ## Summary
 Using the methods below, the CPU of the Odin3 can be underclocked (not to be confused with undervolted). This method simply limits the maximum clock speeds each CPU core can run at, it is not dynamic or "smart". This will override the system's preset CPU maximum clock speed.
