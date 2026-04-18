@@ -31,7 +31,7 @@ The most essential thing that this accomplishes is lowering the total TPD/Power 
 
 ## Manual Tweaking
 If you wish to manually tweak the settings presets or make your own (which is valid because I chose the preset values somewhat arbitrarily) here is some information. 
-- Inside one each underclocking script their are 2 sections. One section sets the Cluster 0 cores max clocks and the other sets the Cluster 1 core max clocks.
+- Inside each underclocking script there are 2 sections. One section sets the Cluster 0 cores max clocks and the other sets the Cluster 1 core max clocks.
 - The second line of each section (the ones beginning with "ECHO" are where the max clock frequency is chosen. 
 - IMPORTANT!!! Each set of cores has their own list of valid frequencies they can be set to. I am NOT certain of what would happen if you miss type/chose an invalid value so BEWARE. 
 - I have not tried going down to the lowest available options yet myself. I also don't know what pros/cons there would be from having the max clocks for each core set being vastly different from one another. 
