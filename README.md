@@ -27,8 +27,15 @@ The most essential thing that this accomplishes is lowering the total TPD/Power 
 - The script should execute VERY quickly. You may very briefly see a window pop up that shows it's executing the script then go away. 
 - There should be a confirmation bubble showing script was completed. 
 5. That's it! The settings will have applied. 
-- Unless you have a 3rd party app you will not be able to directly see that anything has been changed.
-- Easiest way to tell if it's applying correctly is to swap back and forth between "aggressive" and "reset" while running something demanding on the device and notice a temperature or power consumption change. For example, while playing Rise of Tomb Raider on gamenative at 1080 max settings, I could see my consumption go from ~20W to ~14
+- Unless you have a 3rd party app you will not be able to directly see that anything has been changed. I've been using an app called "3C All-in-One Toolbox" from the play store to confirm changes. See example picture below with aggressive underclock applied:
+  <img width="722" height="867" alt="image" src="https://github.com/user-attachments/assets/d1d58f8f-7e86-4372-bc92-9965cb3ebafb" />
+
+- Without a 3rd party app, the easiest way to tell if it's applying correctly is to swap back and forth between "aggressive" and "reset" while running something demanding on the device and notice a temperature or power consumption change. For example, while playing Rise of Tomb Raider on gamenative at 1080 max settings, I could see my consumption go from ~20W to ~14 between no underclock and aggressive underclock. 
+
+## Preset Values Used
+- Aggressive sets Cluster 0 cores to 1785600Hz and Cluster 1 cores to 1958400Hz
+- Moderate sets Cluster 0 cores to 2227200Hz and Cluster 1 cores to 2246400Hz
+- Mild sets Cluster 0 cores to 2745600Hz and Cluster 1 cores to 3072000Hz
 
 ## Manual Tweaking
 If you wish to manually tweak the settings presets or make your own (which is valid because I chose the preset values somewhat arbitrarily) here is some information. 
@@ -36,13 +43,10 @@ If you wish to manually tweak the settings presets or make your own (which is va
 - The second line of each section (the ones beginning with "ECHO" are where the max clock frequency is chosen. 
 - IMPORTANT!!! Each set of cores has their own list of valid frequencies they can be set to. I am NOT certain of what would happen if you miss type/chose an invalid value so BEWARE. 
 - I have not tried going down to the lowest available options yet myself. I also don't know what pros/cons there would be from having the max clocks for each core set being vastly different from one another. 
+- Below is a picture of the custom file showing the available frequency options and where to put them.
+<img width="1205" height="857" alt="image" src="https://github.com/user-attachments/assets/c7302683-8c66-47e4-a88a-eb8ccfee8359" />
 
-- Here are the values that the Cluster 0 cores can be set to:
-384000, 556800, 748800, 960000, 1152000, 1363200, 1555200,
-1785600, 1996800, 2227200, 2400000, 2745600, 2918400, 3072000,
-3321600, 3532800
-- Here are the values that the Cluster 1 cores can be set to:
-1017600, 1209600, 1401600, 1689600, 1958400, 2246400, 2438400,
-2649600, 2841600, 3072000, 3283200, 3513600, 3801600, 4089600,
-4204800, 4320000
+## Notes/Observations
+- I tried making a script with macros to allow simpler way to make custom script settings, but for some reason I could not get any versions of the script I made to work. Hopefully the provided custom template is simple enough.
+- Based on some very brief testing I have done, it seems like the underclock values used for the Cluster 1 cores is where a large majority of the impact is seen, at least from a thermals stand point. Changing the clock speed of Cluster 1 alone made a pretty noticeable TDP difference, whereas changing only Cluster 0 cores clocks didn't seem to make much noticeable difference at all. 
 
