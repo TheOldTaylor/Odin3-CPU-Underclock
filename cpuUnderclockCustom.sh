@@ -29,5 +29,5 @@ chmod 444 /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
 
 # Cluster 1 (2 Prime cores)
 chmod 666 /sys/devices/system/cpu/cpufreq/policy6/scaling_max_freq
-echo 3532800 > /sys/devices/system/cpu/cpufreq/policy6/scaling_max_freq
+echo 4320000 > /sys/devices/system/cpu/cpufreq/policy6/scaling_max_freq
 chmod 444 /sys/devices/system/cpu/cpufreq/policy6/scaling_max_freq
