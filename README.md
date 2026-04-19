@@ -7,6 +7,10 @@ Instructions and other information on how to underclock AYN Odin 3 CPU WITHOUT f
 - This functionality was not originally discovered by me, but by "anonymous until they tell me I can put their name here" on AYN discord server. 
 - Only use this if you have an AYN ODIN 3. In theory this may work with any device with the same chipset but once again I do not guarantee that there won't be issues caused by this.
 
+## Updates (Apr 18 2026)
+- Updated file naming convention
+- Swapped out presets with array of 9 options for variety of underclocking amounts and alternating which set of cores is underclocked. I haven't tested all of them but I'm hoping to go through each one at a time while running a game to see the relative difference in FPS, TDP, and temperatures. 
+
 ## Summary
 Using the methods below, the CPU of the Odin3 can be underclocked (not to be confused with undervolted). This method simply limits the maximum clock speeds each CPU core can run at, it is not dynamic or "smart". This will override the system's preset CPU maximum clock speed.
 
@@ -14,6 +18,20 @@ The most essential thing that this accomplishes is lowering the total TPD/Power 
 - Lowers temps, which also means you can lower fan curve (my personal favorite benefit from this since my fan sounds like a garbage disposal).
 - Lengthens battery life
 - Allows for the GPU to "have a little more breathing room". I'm not 100% sure what exactly this does for the GPU but in some cases seen online people have stated better game performance in games that are GPU bottlenecked. It could be the GPU getting a larger share of the power and/or it could be the whole system being saved from thermal throttling, etc. 
+
+## Preset Values Used
+
+| Script Name        | Cluster 0 (6 cores) | Cluster 1 (2 cores) |
+|-------------------|---------------------|---------------------|
+| **LargeUcAll.sh** | 1785600 Hz          | 1958400 Hz          |
+| **MedUcAll.sh**   | 2227200 Hz          | 2246400 Hz          |
+| **SmallUcAll.sh** | 2745600 Hz          | 3072000 Hz          |
+| **LargeUcC0.sh**  | 1785600 Hz          | 4320000 Hz (max)    |
+| **MedUcC0.sh**    | 2227200 Hz          | 4320000 Hz (max)    |
+| **SmallUcC0.sh**  | 2745600 Hz          | 4320000 Hz (max)    |
+| **LargeUcC1.sh**  | 3532800 Hz (max)    | 1958400 Hz          |
+| **MedUcC1.sh**    | 3532800 Hz (max)    | 2246400 Hz          |
+| **SmallUcC1.sh**  | 3532800 Hz (max)    | 3072000 Hz          |
 
 ##  Process/Explanation
 1. Download the files from the repository and put them onto your Odin 3. As of right now it doesn't seem like it matters where they are stored on the device. 
@@ -31,11 +49,6 @@ The most essential thing that this accomplishes is lowering the total TPD/Power 
   <img width="722" height="867" alt="image" src="https://github.com/user-attachments/assets/d1d58f8f-7e86-4372-bc92-9965cb3ebafb" />
 
 - Without a 3rd party app, the easiest way to tell if it's applying correctly is to swap back and forth between "aggressive" and "reset" while running something demanding on the device and notice a temperature or power consumption change. For example, while playing Rise of Tomb Raider on gamenative at 1080 max settings, I could see my consumption go from ~20W to ~14 between no underclock and aggressive underclock. 
-
-## Preset Values Used
-- Aggressive sets Cluster 0 cores to 1785600Hz and Cluster 1 cores to 1958400Hz
-- Moderate sets Cluster 0 cores to 2227200Hz and Cluster 1 cores to 2246400Hz
-- Mild sets Cluster 0 cores to 2745600Hz and Cluster 1 cores to 3072000Hz
 
 ## Manual Tweaking
 If you wish to manually tweak the settings presets or make your own (which is valid because I chose the preset values somewhat arbitrarily) here is some information. 
