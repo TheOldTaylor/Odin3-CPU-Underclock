@@ -3,7 +3,7 @@ Instructions and other information on how to underclock AYN Odin 3 CPU WITHOUT f
 
 ## Disclaimer/Pre-read
 - I do not guarantee the safety of or functional benefit of using this on your device. Use at your own risk.
-- This functionality was not originally discovered by me, but by "Randall205" and "Potato" on AYN's discord server. 
+- This functionality was not originally discovered by me, but by u/twoohfive205 and u/JoaozaoS on reddit. Link to inspiration post: https://www.reddit.com/r/OdinHandheld/comments/1snp9xd/comment/ogphgmb/
 - I have only tried this on an AYN Odin 3 with the Snapdragon 8 Elite/Dragonwing, while these exact scripts may work on any other android device with the same chipset, I haven't personally tried it. I'm sure similar scripts could be created for other chipsets as well but they would need to adhere to those specific chips' available clock settings. 
 
 ## Updates
