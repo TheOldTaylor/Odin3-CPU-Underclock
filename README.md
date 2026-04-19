@@ -35,7 +35,7 @@ The most essential thing that this accomplishes is lowering the total TPD/Power 
 
 ##  Process/Explanation
 1. Download the files from the repository and put them onto your Odin 3. As of right now it doesn't seem like it matters where they are stored on the device. 
-- The files are named somewhat according to the amount of underclock applied i.e. "aggressive" = lowest overall maximum CPU clocks of the presets. "reset" = changing device settings back to factory. 
+- The files are named somewhat according to the amount of underclock applied i.e. "large" = lowest overall maximum CPU clocks of the presets. "reset" = changing device settings back to factory. "All" means the underclock is applied to all cores, "C1" means only the Cluster1 cores are underclocked, etc. 
 - These settings do not persist through power cycle, which means that is another method to reset these settings back to factory/you will need do this process again for underclock to apply after any power cycle.
 - These files are .sh (shell scripts) that will tell the device how to set a specific CPU clock settings. 
 
