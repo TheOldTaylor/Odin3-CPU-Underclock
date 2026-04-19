@@ -5,13 +5,13 @@ stop perfd
 stop vendor.perf-hal-1-0
 stop vendor.perf-hal-2-0
  
-# Moderate underclock
+# Aggressive underclock
 # Cluster 0 (6 cores)
 chmod 666 /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
-echo 2227200 > /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
+echo 1785600 > /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
 chmod 444 /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
  
 # Cluster 1 (2 Prime cores)
 chmod 666 /sys/devices/system/cpu/cpufreq/policy6/scaling_max_freq
-echo 2246400 > /sys/devices/system/cpu/cpufreq/policy6/scaling_max_freq
+echo 1958400 > /sys/devices/system/cpu/cpufreq/policy6/scaling_max_freq
 chmod 444 /sys/devices/system/cpu/cpufreq/policy6/scaling_max_freq

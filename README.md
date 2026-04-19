@@ -7,6 +7,11 @@ Instructions and other information on how to underclock AYN Odin 3 CPU WITHOUT f
 - I have only tried this on an AYN Odin 3 with the Snapdragon 8 Elite/Dragonwing, while these exact scripts may work on any other android device with the same chipset, I haven't personally tried it. I'm sure similar scripts could be created for other chipsets as well but they would need to adhere to those specific chips' available clock settings. 
 
 ## Updates
+(Apr 19 2026 Pt. 2 lol)
+- Thanks for the help again to u/twoohfive205 for the suggestions and help! This update is mostly their idea and execution. 
+- Removed some of the recently added presets and reverted back to three simple presets and the reset preset. "Custom" preset has been removed as well, its function has been replaced by the updated manual tweaking process. 
+- Re-organized the structure of the files. There are now two folders: "Basic Presets" and "Per Cluster Tuning". See "Manual Tweaking" Section for info.
+
 (Apr 19 2026)
 - Clarified some instructions/info. 
 
@@ -23,19 +28,13 @@ The most essential thing that this accomplishes is lowering the total TPD/Power 
 - Allows for the GPU to "have a little more breathing room". I'm not 100% sure what exactly this does for the GPU but in some cases seen online people have stated better game performance in games that are GPU bottlenecked. It could be the GPU getting a larger share of the power and/or it could be the whole system being saved from thermal throttling, etc.
 - This method should work on both rooted and un-rooted devices
 
-## Preset Values Used
+## Basic Preset Values Used
 
-| Script Name        | Cluster 0 (6 cores) | Cluster 1 (2 cores) |
-|-------------------|---------------------|---------------------|
-| **LargeUcAll.sh** | 1785600 Hz          | 1958400 Hz          |
-| **MedUcAll.sh**   | 2227200 Hz          | 2246400 Hz          |
-| **SmallUcAll.sh** | 2745600 Hz          | 3072000 Hz          |
-| **LargeUcC0.sh**  | 1785600 Hz          | 4320000 Hz (max)    |
-| **MedUcC0.sh**    | 2227200 Hz          | 4320000 Hz (max)    |
-| **SmallUcC0.sh**  | 2745600 Hz          | 4320000 Hz (max)    |
-| **LargeUcC1.sh**  | 3532800 Hz (max)    | 1958400 Hz          |
-| **MedUcC1.sh**    | 3532800 Hz (max)    | 2246400 Hz          |
-| **SmallUcC1.sh**  | 3532800 Hz (max)    | 3072000 Hz          |
+| Script Name            | Cluster 0 (6 cores) | Cluster 1 (2 cores) |
+|------------------------|---------------------|---------------------|
+| **LargeUnderclock.sh** | 1785600 Hz          | 1958400 Hz          |
+| **MedUnderclock**      | 2227200 Hz          | 2246400 Hz          |
+| **SmallUnderclock.sh** | 2745600 Hz          | 3072000 Hz          |
 
 ##  How To Use Presets
 1. Download the files from the repository and put them onto your Odin 3. As of right now it doesn't seem like it matters where they are stored on the device. 
@@ -59,9 +58,7 @@ The most essential thing that this accomplishes is lowering the total TPD/Power 
 
 ## Manual Tweaking
 If you wish to manually tweak the settings presets or make your own (which is valid because I chose the preset values somewhat arbitrarily) here is some information. 
-- Inside each underclocking script there are 2 sections. One section sets the Cluster 0 cores max clocks and the other sets the Cluster 1 core max clocks. I have provided a "custom" script that is formatted in a way that should be easier to follow when trying to make your own preset.
-- The second line of each section (the ones beginning with "ECHO" are where the max clock frequency is chosen. 
-- IMPORTANT!!! Each set of cores has their own list of valid frequencies they can be set to. I am NOT certain of what would happen if you miss type/chose an invalid value so BEWARE. 
-- I have not tried going down to the lowest available options yet myself. I also don't know what pros/cons there would be from having the max clocks for each core set being vastly different from one another. 
-- Below is a picture of the custom file showing the available frequency options and where to put them.
-<img width="1205" height="857" alt="image" src="https://github.com/user-attachments/assets/c7302683-8c66-47e4-a88a-eb8ccfee8359" />
+- There is a new folder structure called "Per Cluster Tuning".
+- This folder contains a folder for each cluster.
+- The scripts in each of these folders are designed to adjust the selected cluster's frequency without changing the other cluster's setting. 
+- This should now enable those who want to tinker in detail the ability to use any combination of frequencies across the 2 clusters without needing to modify any script file content.
