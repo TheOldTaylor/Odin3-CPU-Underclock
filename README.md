@@ -7,6 +7,9 @@ Instructions and other information on how to underclock AYN Odin 3 CPU WITHOUT f
 - I have only tried this on an AYN Odin 3 with the Snapdragon 8 Elite/Dragonwing, while these exact scripts may work on any other android device with the same chipset, I haven't personally tried it. I'm sure similar scripts could be created for other chipsets as well but they would need to adhere to those specific chips' available clock settings. 
 
 ## Updates
+(Apr 20 2026)
+- Made a release package, no changes to files or function. Make sure to download from release to get proper files and folder sctructure. 
+
 (Apr 19 2026 Pt. 2 lol)
 - Thanks for the help again to u/twoohfive205 for the suggestions and help! This update is mostly their idea and execution. 
 - Removed some of the recently added presets and reverted back to three simple presets and the reset preset. "Custom" preset has been removed as well, its function has been replaced by the updated manual tweaking process. 
@@ -37,7 +40,7 @@ The most essential thing that this accomplishes is lowering the total TPD/Power 
 | **SmallUnderclock.sh** | 2745600 Hz          | 3072000 Hz          |
 
 ##  How To Use Presets
-1. Download the files from the repository and put them onto your Odin 3. As of right now it doesn't seem like it matters where they are stored on the device. 
+1. Download the most recent .zip from the [Releases](https://github.com/TheOldTaylor/Odin3-CPU-Underclock/releases) and extract them onto your Odin 3. As of right now it doesn't seem like it matters where they are stored on the device. 
 - The files are named somewhat according to the amount of underclock applied i.e. "large" = lowest overall maximum CPU clocks of the presets. "reset" = changing device settings back to factory. "All" means the underclock is applied to all cores, "C1" means only the Cluster1 cores are underclocked, etc. 
 - These settings do not persist through power cycle, so if your battery dies, or you turn your device off/on, the device will boot with the original factory settings applied and you will need to run a script again to apply underclock.
 - These files are .sh (shell scripts) that will tell the device how to set a specific CPU clock settings. 
