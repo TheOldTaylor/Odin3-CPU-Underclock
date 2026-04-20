@@ -8,7 +8,7 @@ Instructions and other information on how to underclock AYN Odin 3 CPU WITHOUT f
 
 ## Updates
 (Apr 20 2026)
-- Made a release package, no changes to files or function. Make sure to download from release to get proper files and folder sctructure. 
+- Made a [Release](https://github.com/TheOldTaylor/Odin3-CPU-Underclock/releases) package, no changes to files or function. Make sure to download from release to get proper files and folder sctructure. 
 
 (Apr 19 2026 Pt. 2 lol)
 - Thanks for the help again to u/twoohfive205 for the suggestions and help! This update is mostly their idea and execution. 
